@@ -1,8 +1,12 @@
 const express = require('express');
 const { resolve } = require('path');
+//require('dotenv').config();  // Load environment variables from .env
 
 const app = express();
 const port = 3010;
+
+// console.log(`API Key: ${process.env.API_KEY}`);
+// console.log(`Server Secret: ${process.env.SERVER_SECRET}`);
 
 app.use(express.static('static'));
 
